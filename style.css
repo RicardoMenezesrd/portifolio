@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Margarine&display=swap');
+/*font-family: 'Krona one', sans-serif;*/
+/*space-evenly;  ítens distribuídos igualmente com o mesmo espaçamento entre eles*/
+/*:root{
+     --tamanho-da-fonte:  24px; var:--tamanho da fonte
+}*/
+
+:root{
+    --cor-principal: #000000;
+    --cor-secundaria: #fdfdfd;
+    --cor-tercearia: #ff0000;
+    --cor-quartenaria: #0cd8fc;
+    --cor-hover:var(--cor-quartenaria);
+    --cor-cabeçalho:var(--cor-tercearia);
+    --cor-body:var(--cor-secundaria);
+    
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0cm;
+    
+}
+
+body{
+    /* box-sizing: border-box; */
+    height: 100vh;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria)
+}
+.cabeçalho{
+    padding: 2% 0% 0% 10%;
+    
+
+}
+.menuçbç{
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabeçalholink{
+    font-weight: 600;
+    padding: 3% 3%;
+    color: var(--cor-tercearia);
+    font-size: 1,5rem;
+    font-family: 'Krona one ', sans-serif;
+    text-decoration: none;
+}
+
+.programas{
+    color: #22D4FD;
+}
+.tt2{
+    color: rebeccapurple;
+}
+
+.apresentaçaopai{
+    gap: 82px;
+    padding: 5% 10%; /* adiciona uma margem para centralizar os quadrados na tela*/
+    display:flex; /* coloca os quadrados lado a lado sempre no elemento pai */
+    align-items: center; /* garante que os flex-items dentro de um elemento com display flex vão centralizar (verticalmente e horizontalmente)*/
+    justify-content: space-between; /* deixa um espaço entre os itens*/
+  
+    
+}
+.seçaopai{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   gap: 40px;
+}
+.titulo{
+    font-size: 2,25rem;
+    font-family: 'Krona one ', sans-serif;
+}
+.paragrafo{
+    font-size: 1,5rem;
+    font-family: 'Margarine', sans-serif;
+}
+.minhasredes{
+    font-family: 'Krona one', sans-serif;
+    font-weight: 500px;
+    font-size: 1,8rem;
+}
+.butao{
+    display: flex; 
+    flex-direction: column; /* deixar os itens em coluna*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* adiciona espaços iguais entre cada quadrado */
+}
+.link{
+   
+    /* background-color: red; */
+    gap: 10px; /*é uma propriedade utilizada para definir o espaçamento entre os elementos de um grid ou flexbox*/
+    border: 10px double;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1,8rem;
+    padding: 22px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria); 
+    display: flex;
+        justify-content: center; /*é uma propriedade que permite alinhar elementos em um container flexível ao longo do eixo principal*/
+
+}
+.link:hover{ /*adicionar efeitos em botões*/
+    color: var(--cor-tercearia); 
+    font-size: 2,25rem;
+}
+.imagem{
+    width: 30%;
+}
+/*.butao:hover{
+    background-color: purple;
+}*/
+.rodape{
+    color: var(--cor-quartenaria);
+    background-color: var(--cor-tercearia);
+    text-align: center;
+    padding: 20px;
+    font-size: 1,8rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@media(max-width:1200px){
+    .cabeçalho{
+     padding: 10%;
+     
+    }
+    .menuçbç{
+        justify-content: center;
+    } 
+
+    .apresentaçaopai{
+        flex-direction: column-reverse;
+        padding: 5;
+
+    }
+    .seçaopai{
+        width: auto;
+    }
+
+}
